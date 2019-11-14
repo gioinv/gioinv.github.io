@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Giải mã siêu trí tuệ VIỆT NAM - Tâm Trí Lực</title>
   <meta name="keywords" content="Giải mã siêu trí tuệ VIỆT NAM, Giải mã siêu trí tuệ">
-  <meta name="description" content="Chương trình Giải mã siêu trí tuệ VIỆT NAM - Tâm Trí Lực được chúng tôi chia sẽ lên đây cho các bạn có thể tự học online một cách tối ưu nhất">
+  <meta name="description"
+    content="Chương trình Giải mã siêu trí tuệ VIỆT NAM - Tâm Trí Lực được chúng tôi chia sẽ lên đây cho các bạn có thể tự học online một cách tối ưu nhất">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
@@ -11,201 +13,345 @@
   <link rel="stylesheet" href="dist/bundle.css">
   <script src="dist/bundle.js"></script>
 </head>
+
 <body>
   <div id="app">
     <v-app>
       <v-content>
-        <v-layout row wrap class="top-bar">
-          <v-flex xs6>
-              <a href="https://www.facebook.com/tamtriluc" title="Fan page chúng tôi"><v-icon color="primary">mdi-facebook-box</v-icon></a>
-              <a href="https://www.youtube.com/channel/UCM0bv1L91C8-z71gAzrLBCQ" title="Kênh Youtube chúng tôi"><v-icon color="red">mdi-youtube</v-icon></a>
-            
-          </v-flex>
-          <v-flex xs6 text-right>
-              <v-icon color="white"> mdi-phone</v-icon> 0939.279.868
-          </v-flex>
-        </v-layout>
-        
-        <div class="mt-5 pt-3">
-            <v-img
-            height="100"
-            src="https://w.ladicdn.com/s600x400/5c7a2764faab435340e02dae/original-20191111122233.png"
-          >
+        <div class="top-bar">
+          <div style="width:40%" class="float-left text-left">
+            <a href="https://www.facebook.com/tamtriluc" title="Fan page chúng tôi">
+              <v-icon color="primary">mdi-facebook-box</v-icon>
+            </a>
+            <a href="https://www.youtube.com/channel/UCM0bv1L91C8-z71gAzrLBCQ" title="Kênh Youtube chúng tôi">
+              <v-icon color="red">mdi-youtube</v-icon>
+            </a>
+          </div>
+          <div class="float-right text-right" style="width: 50%">
+            <v-icon color="white"> mdi-phone</v-icon> 0939.279.868
+          </div>
         </div>
-        
+
+
+        <div class="mt-5 mb-3 pt-3 text-center">
+          <v-img width="300" style="margin: auto;"
+            src="https://w.ladicdn.com/s600x400/5c7a2764faab435340e02dae/original-20191111122233.png">
+        </div>
+        <div class="wrapper mt-3 mb-3">
+          <div class="divider div-transparent div-arrow-down"></div>
+        </div>
         <v-layout row wrap ml-3 mr-3>
           <v-flex xs12>
-            <p align="center"><img src="dist/img/title.png" height="30"/></p>
-            <p class="primary--text" align="center"><strong>PHƯƠNG PHÁP THÔNG MINH GIÚP CON <br>GHI NHỚ <span class="title_top">90%</span> NHỮNG GÌ CON ĐÃ HỌC</strong></p>
+            <p align="center"><img src="dist/img/title.png" height="30" /></p>
+            <p class="primary--text" align="center"><strong>PHƯƠNG PHÁP THÔNG MINH GIÚP CON <br>GHI NHỚ <span
+                  class="title_top">90%</span> NHỮNG GÌ CON ĐÃ HỌC</strong></p>
           </v-flex>
           <v-flex xs12>
-            <ul>
-              <li class="mb-2"><v-icon class="mr-2" color="orange">mdi-panda</v-icon>Thuộc nhanh, nhớ chuẩn.</li>
-              <li class="mb-2"><v-icon class="mr-2" color="purple"> mdi-bell-ring</v-icon>Đánh thức tiềm năng não bộ của trẻ.</li>
-              <li class="mb-2"><v-icon class="mr-2" color="blue">mdi-pig</v-icon class="mr-2">Học không vất vả mà hiệu quả gấp <span><strong class="blink">3</strong> lần.</span></li>
-              <li><v-icon class="mr-2" color="green">mdi-alarm-check</v-icon>Vươn lên dẫn đầu chỉ sau <span class="shake-text ">3</span></strong> tháng.</li>
+            <ul v-bind:class="{'laptop-container': !isPhone}">
+              <li class="mb-2">
+                <v-icon class="mr-2" color="orange">mdi-panda</v-icon>Thuộc nhanh, nhớ chuẩn.
+              </li>
+              <li class="mb-2">
+                <v-icon class="mr-2" color="purple"> mdi-bell-ring</v-icon>Đánh thức tiềm năng não bộ của trẻ.
+              </li>
+              <li class="mb-2">
+                <v-icon class="mr-2" color="blue">mdi-pig</v-icon class="mr-2">Học không vất vả mà hiệu quả gấp
+                <span><strong class="blink">3</strong> lần.</span>
+              </li>
+              <li>
+                <v-icon class="mr-2" color="green">mdi-alarm-check</v-icon>Vươn lên dẫn đầu chỉ sau <span
+                  class="shake-text ">3</span></strong> tháng.
+              </li>
             </ul>
           </v-flex>
           <v-flex xs12 mt-3 text-center>
-              <v-btn
-              large
-              rounded
-              color="green"
-              class="ma-2 white--text"
-              @click="loader = 'loading3'"
-            >
+            <v-btn href="#two" large rounded color="green" class="ma-2 white--text" @click="loader = 'loading3'">
               Tìm hiểu thêm
               <v-icon right dark>mdi-hand-pointing-right</v-icon>
             </v-btn>
           </v-flex>
         </v-layout>
-        <div class="wrapper mt-5 mb-3"><div class="divider div-transparent div-dot"></div></div>
+        <div class="wrapper mt-5 mb-3" id="two">
+          <div class="divider div-transparent div-dot"></div>
+        </div>
         <div style="background:rgb(92, 228, 171)">
           <v-layout row wrap ml-2 mr-2>
-              <v-flex xs12 pt-5 pb-5> 
-                <p class="course" align="center"><strong>KHÓA HỌC ONLINE</strong></p>
-                <p class="secondary--text course-main" align="center">GIẢI MÃ <span class="orange--text">SIÊU</span> <span class="green--text">TRÍ</span> <span class="orange--text accent-2">TUỆ</span> <br>VIỆT NAM</p>
-                <div class="wrapper"><div class="divider div-transparent"></div></div>
-                <p align="left">Với các chủ đề được các chuyên gia hàng đầu về trí nhớ đưa ra:</p>
-                <ul>
-                    <li class="mb-2"><v-icon class="mr-2" color="orange">mdi-map-marker-radius</v-icon>Bản đồ sân bay.</li>
-                    <li class="mb-2"><v-icon class="mr-2" color="purple">mdi-map-marker-radius</v-icon>Ma trân sử học.</li>
-                    <li class="mb-2"><v-icon class="mr-2" color="blue">mdi-map-marker-radius</v-icon>Truy tìm vân tay.</li>
-                    <li><v-icon class="mr-2" color="green">mdi-map-marker-radius</v-icon>Sàn diễn trí nhớ.</li>
-                  </ul>
-              </v-flex>
-              
-              <v-flex xs12>
-                  <div class="wrapper"><div class="divider div-transparent"></div></div>
-                  <v-card class="mb-3">
-                    <v-list-item>
-                      <v-list-item-avatar color="primary"><v-icon color="white">mdi-cash-usd</v-icon></v-list-item-avatar>
-                      <v-list-item-content>
-                        <v-list-item-title class="headline">Trọn bộ khóa học chỉ <br>
-                          <span class="orange--text display-1 blink">499.000 VNĐ</span><strong></strong></v-list-item-title>
-                        <v-list-item-subtitle>Giá gốc <strike class="display-1"> 868.000đ</strike></v-list-item-subtitle>
-                      </v-list-item-content>
-                    </v-list-item>
-                    <v-card-actions>
-                        <v-spacer></v-spacer>
-                      <v-btn color="orange darken-1" class='btn--shockwave is-active'>
-                        <v-icon color="primary">mdi-cart</v-icon>
-                        <strong class="white--text">TÔI MUỐN ĐĂNG KÝ NGAY CHO CON</strong>
-                      </v-btn>
-                    </v-card-actions>
-                  </v-card>
-              </v-flex>         
-            </v-layout>
+            <v-flex xs12 pt-5 pb-5 sm6>
+              <p class="course" align="center"><strong>KHÓA HỌC ONLINE</strong></p>
+              <p class="secondary--text course-main" align="center">GIẢI MÃ <span class="orange--text">SIÊU</span> <span
+                  class="green--text">TRÍ</span> <span class="orange--text accent-2">TUỆ</span> <br>VIỆT NAM</p>
+              <div class="wrapper">
+                <div class="divider div-transparent"></div>
+              </div>
+              <p align="left" class="ml-3">Với các chủ đề được các chuyên gia hàng đầu về trí nhớ đưa ra:</p>
+              <ul class="ml-3">
+                <li class="mb-2">
+                  <v-icon class="mr-2" color="orange">mdi-map-marker-radius</v-icon>Bản đồ sân bay.
+                </li>
+                <li class="mb-2">
+                  <v-icon class="mr-2" color="purple">mdi-map-marker-radius</v-icon>Ma trân sử học.
+                </li>
+                <li class="mb-2">
+                  <v-icon class="mr-2" color="blue">mdi-map-marker-radius</v-icon>Truy tìm vân tay.
+                </li>
+                <li>
+                  <v-icon class="mr-2" color="green">mdi-map-marker-radius</v-icon>Sàn diễn trí nhớ.
+                </li>
+              </ul>
+            </v-flex>
+
+            <v-flex xs12 sm6>
+              <div class="wrapper">
+                <div v-if="isPhone" class="divider div-transparent"></div>
+              </div>
+              <v-card class="mb-3" v-bind:style="{marginTop:isPhone?0:80+'px'}">
+                <v-list-item>
+                  <v-list-item-avatar color="primary">
+                    <v-icon color="white">mdi-cash-usd</v-icon>
+                  </v-list-item-avatar>
+                  <v-list-item-content>
+                    <v-list-item-title class="headline">Trọn bộ khóa học chỉ <br>
+                      <span class="orange--text display-1 blink">499.000 VNĐ</span><strong></strong></v-list-item-title>
+                    <v-list-item-subtitle>Giá gốc <strike class="display-1"> 868.000đ</strike></v-list-item-subtitle>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-card-actions>
+                  <v-spacer></v-spacer>
+                  <v-btn href="#register" rounded color="orange darken-1" class='btn--shockwave is-active'>
+                    <v-icon color="primary">mdi-cart</v-icon>
+                    <strong class="white--text">TÔI MUỐN ĐĂNG KÝ NGAY CHO CON</strong>
+                  </v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-flex>
+          </v-layout>
         </div>
-        
-        <div class="wrapper mt-5"><div class="divider div-transparent div-dot"></div></div>
-        
-        <v-card
-         class="pa-3 ml-2 mr-2 mb-5">
-          <v-card-title primary-title>
-              <h2 class="mb-3"><span>Thông tin giảng viên</span></h2>
-          </v-card-title>
-          <div class="d-flex flex-no-wrap justify-space-between">
-            <v-avatar
-            size="130"
-            tile>
-            <v-img src="https://w.ladicdn.com/s650x650/5c7a2764faab435340e02dae/ghi-chep-thong-minh-thuoc-bai-tai-lop-tamtriluc-65-1559635980.jpg"></v-img>
-          </v-avatar>
-          <v-chip class="primary mr-2" style="margin-top:50px">TS. NGUYỄN PHÙNG PHONG</v-chip>                        
-          </div>
-          <div class="wrapper"><div class="divider div-transparent"></div></div>
-          <div class="ml-2 mr-2">
-            <p><v-icon color="primary">mdi-numeric-1-box</v-icon> Kỷ lục gia Siêu trí nhớ thế giới đầu tiên Việt Nam</p>
-            <p><v-icon color="primary">mdi-numeric-2-box</v-icon> Chủ tịch Hội đồng Siêu trí nhớ Việt Nam</p>
-            <p><v-icon color="primary">mdi-numeric-3-box</v-icon> Huấn luyện viên trưởng Đội tuyển Siêu trí nhớ Việt Nam</p>
-            <p><v-icon color="primary">mdi-numeric-4-box</v-icon> Kinh nghiệm 12 năm trong lĩnh vực giáo dục trẻ</p>
-          </div>
-          <div class="wrapper mt-5 mb-2"><div class="divider div-transparent"></div></div>
-          <div>
-              <a  href="https://www.youtube.com/embed/OaVqS3RctM4?ecver=2&amp;autoplay=1" target="_blank">
-              <img width="100%" class="img-thumb img-fluid" src="https://cdn.kynaforkids.vn/landing-page/khoa-hoc/phuong-phap-giup-con-thong-minh/img/video.png" alt="" >
-              </a>
-          </div>
+        <div class="wrapper mt-5 mb-5 pa-5">
+          <div class="divider div-transparent div-dot"></div>
+        </div>
+
+        <v-card class="pa-3 ml-2 mr-2 mb-5">
+          <v-layout row wrap ml-2 mr-2>
+            <v-flex xs12 sm6>
+              <v-card-title primary-title>
+                <h2 class="mb-3"><span>Thông tin giảng viên</span></h2>
+              </v-card-title>
+              <div class="d-flex">
+                <v-avatar size="130" tile>
+                  <v-img
+                    src="https://w.ladicdn.com/s650x650/5c7a2764faab435340e02dae/ghi-chep-thong-minh-thuoc-bai-tai-lop-tamtriluc-65-1559635980.jpg">
+                  </v-img>
+                </v-avatar>
+                <v-chip class="primary mr-2" style="margin-top:50px">TS. NGUYỄN PHÙNG PHONG</v-chip>
+              </div>
+              <div class="wrapper">
+                <div class="divider div-transparent"></div>
+              </div>
+              <div class="ml-2 mr-2">
+                <p>
+                  <v-icon color="primary">mdi-numeric-1-box</v-icon> Kỷ lục gia Siêu trí nhớ thế giới đầu tiên Việt Nam
+                </p>
+                <p>
+                  <v-icon color="primary">mdi-numeric-2-box</v-icon> Chủ tịch Hội đồng Siêu trí nhớ Việt Nam
+                </p>
+                <p>
+                  <v-icon color="primary">mdi-numeric-3-box</v-icon> Huấn luyện viên trưởng Đội tuyển Siêu trí nhớ Việt
+                  Nam
+                </p>
+                <p>
+                  <v-icon color="primary">mdi-numeric-4-box</v-icon> Kinh nghiệm 12 năm trong lĩnh vực giáo dục trẻ
+                </p>
+              </div>
+            </v-flex>
+            <v-flex xs12 sm6>
+              <div class="wrapper mt-5 mb-2" v-if="isPhone">
+                <div class="divider div-transparent"></div>
+              </div>
+              <div>
+                <a href="https://www.youtube.com/embed/OaVqS3RctM4?ecver=2&amp;autoplay=1" target="_blank">
+                  <img width="100%" class="img-thumb img-fluid"
+                    src="https://cdn.kynaforkids.vn/landing-page/khoa-hoc/phuong-phap-giup-con-thong-minh/img/video.png"
+                    alt="">
+                </a>
+              </div>
+            </v-flex>
+          </v-layout>
         </v-card>
-  
-        <div class="wrapper mt-5 mb-5 pt-3"><div class="divider div-transparent div-dot"></div></div>
+
+        <div class="wrapper mt-5 mb-5 pt-3">
+          <div class="divider div-transparent div-dot"></div>
+        </div>
 
         <div style="background:#47C28B">
-            <v-layout row wrap ml-2 mr-2>
-                <v-flex xs12 pt-5 pb-5> 
-                  <p class="secondary--text course-main" align="center">Lý do bố mẹ nhất định không nên bỏ lỡ khóa học này?</p>
-                  <div class="wrapper"><div class="divider div-transparent"></div></div>
-                  <ul>
-                      <li class="mb-2"><v-icon class="mr-2" color="orange">mdi-map-marker-radius</v-icon>Đây là khóa học Online, học bất cứ nơi nào, bằng hình thức xem bài học qua máy tính, điện thoại có kết nối Internet.</li>
-                      <li class="mb-2"><v-icon class="mr-2" color="purple">mdi-map-marker-radius</v-icon>Nội dung bài giảng chi tiết, dễ hiểu, chú trọng vào thực hành.</li>
-                      <li class="mb-2"><v-icon class="mr-2" color="blue">mdi-map-marker-radius</v-icon>Thời gian lẫn tiến độ học hoàn toàn do mình chủ động sắp xếp.</li>
-                      <li><v-icon class="mr-2" color="green">mdi-map-marker-radius</v-icon>Mỗi ngày bỏ ra 10 - 15 phút, mở video bài giảng ra học.</li>
-                    </ul>
-                </v-flex>
-                
-                <v-flex xs12>
-                    <div class="wrapper"><div class="divider div-transparent"></div></div>
-                    <v-card class="mb-3">
-                      <v-list-item>
-                        <v-list-item-avatar color="primary"><v-icon color="white">mdi-cash-usd</v-icon></v-list-item-avatar>
-                        <v-list-item-content>
-                          <v-list-item-title class="headline">Trọn bộ khóa học chỉ <br>
-                            <span class="orange--text display-1 blink">499.000 VNĐ</span><strong></strong></v-list-item-title>
-                          <v-list-item-subtitle>Giá gốc <strike class="display-1"> 868.000đ</strike></v-list-item-subtitle>
-                        </v-list-item-content>
-                      </v-list-item>
-                      <v-card-actions>
-                          <v-spacer></v-spacer>
-                        <v-btn color="orange darken-1" class='btn--shockwave is-active'>
-                          <v-icon color="primary">mdi-cart</v-icon>
-                          <strong class="white--text">TÔI MUỐN ĐĂNG KÝ NGAY CHO CON</strong>
-                        </v-btn>
-                      </v-card-actions>
-                    </v-card>
-                </v-flex>         
-              </v-layout>
-          </div>
+          <v-layout row wrap ml-2 mr-2>
+            <v-flex xs12 pt-5 pb-5 sm6>
+              <p class="secondary--text course-main" align="center">Lý do bố mẹ nhất định không nên bỏ lỡ khóa học này?
+              </p>
+              <div class="wrapper">
+                <div class="divider div-transparent"></div>
+              </div>
+              <ul>
+                <li class="mb-2">
+                  <v-icon class="mr-2" color="orange">mdi-map-marker-radius</v-icon>Đây là khóa học Online, học bất cứ
+                  nơi nào, bằng hình thức xem bài học qua máy tính, điện thoại có kết nối Internet.
+                </li>
+                <li class="mb-2">
+                  <v-icon class="mr-2" color="purple">mdi-map-marker-radius</v-icon>Nội dung bài giảng chi tiết, dễ
+                  hiểu, chú trọng vào thực hành.
+                </li>
+                <li class="mb-2">
+                  <v-icon class="mr-2" color="blue">mdi-map-marker-radius</v-icon>Thời gian lẫn tiến độ học hoàn toàn do
+                  mình chủ động sắp xếp.
+                </li>
+                <li>
+                  <v-icon class="mr-2" color="green">mdi-map-marker-radius</v-icon>Mỗi ngày bỏ ra 10 - 15 phút, mở video
+                  bài giảng ra học.
+                </li>
+              </ul>
+            </v-flex>
 
-          <div class="wrapper mt-5"><div class="divider div-transparent div-dot"></div></div>
-        
-        <v-card
-         class="pa-3 ml-2 mr-2 mb-5">
-          <v-card-title primary-title>
-              <h2 class="mb-3"><span>Thông tin đăng ký</span></h2>
-          </v-card-title>
-          <div class="d-flex flex-no-wrap justify-space-between">
-            <v-avatar
-            size="130"
-            tile>
-            <v-img src="https://w.ladicdn.com/s650x650/5c7a2764faab435340e02dae/ghi-chep-thong-minh-thuoc-bai-tai-lop-tamtriluc-65-1559635980.jpg"></v-img>
-          </v-avatar>
-          <v-chip class="primary mr-2" style="margin-top:50px">TS. NGUYỄN PHÙNG PHONG</v-chip>                        
-          </div>
-          <div class="wrapper"><div class="divider div-transparent"></div></div>
-          <div class="ml-2 mr-2">
-            <p><v-icon color="primary">mdi-numeric-1-box</v-icon> Kỷ lục gia Siêu trí nhớ thế giới đầu tiên Việt Nam</p>
-            <p><v-icon color="primary">mdi-numeric-2-box</v-icon> Chủ tịch Hội đồng Siêu trí nhớ Việt Nam</p>
-            <p><v-icon color="primary">mdi-numeric-3-box</v-icon> Huấn luyện viên trưởng Đội tuyển Siêu trí nhớ Việt Nam</p>
-            <p><v-icon color="primary">mdi-numeric-4-box</v-icon> Kinh nghiệm 12 năm trong lĩnh vực giáo dục trẻ</p>
-          </div>
-          <div class="wrapper mt-5 mb-2"><div class="divider div-transparent"></div></div>
-          <div>
-              <a  href="https://www.youtube.com/embed/OaVqS3RctM4?ecver=2&amp;autoplay=1" target="_blank">
-              <img width="100%" class="img-thumb img-fluid" src="https://cdn.kynaforkids.vn/landing-page/khoa-hoc/phuong-phap-giup-con-thong-minh/img/video.png" alt="" >
-              </a>
-          </div>
+            <v-flex xs12 sm6>
+              <div class="wrapper" v-if="isPhone">
+                <div class="divider div-transparent"></div>
+              </div>
+              <v-card class="mb-3" v-bind:style="{marginTop:isPhone?0:40+'px'}">
+                <v-list-item>
+                  <v-list-item-avatar color="primary">
+                    <v-icon color="white">mdi-cash-usd</v-icon>
+                  </v-list-item-avatar>
+                  <v-list-item-content>
+                    <v-list-item-title class="headline">Trọn bộ khóa học chỉ <br>
+                      <span class="orange--text display-1 blink">499.000 VNĐ</span><strong></strong></v-list-item-title>
+                    <v-list-item-subtitle>Giá gốc <strike class="display-1"> 868.000đ</strike></v-list-item-subtitle>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-card-actions>
+                  <v-spacer></v-spacer>
+                  <v-btn href="#register" rounded color="orange darken-1" class='btn--shockwave is-active'>
+                    <v-icon color="primary">mdi-cart</v-icon>
+                    <strong class="white--text">TÔI MUỐN ĐĂNG KÝ NGAY CHO CON</strong>
+                  </v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </div>
+
+        <div class="wrapper  pt-5 pb-5">
+          <div class="divider div-transparent div-dot"></div>
+        </div>
+
+        <v-card class="pa-3 ml-2 mr-2 " style="margin-bottom: 20px;">
+
+          <v-card-text>
+            <v-layout row wrap ml-1 mr-1>
+              <v-flex xs12 sm6 >
+                <h2 class="mb-5"><span>Thời hạn đăng</span></h2>
+                <v-card class="mb-3" width="400">
+                  <v-list-item>
+
+                    <v-list-item-content>
+                      <v-list-item-title class="headline">
+                        <v-icon>mdi-cash-usd</v-icon>Trọn bộ khóa học chỉ <br>
+                        <span class="orange--text display-1 blink">499.000 VNĐ</span><strong></strong>
+                      </v-list-item-title>
+                      <v-list-item-subtitle>Giá gốc <strike class="display-1"> 868.000đ</strike></v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+
+                </v-card>
+                <div class='countdown' data-date="2019-11-18"></div>
+              </v-flex>
+              <v-flex xs12 sm6  >
+                <span id="register"></span>
+                <div v-if="isPhone" class="wrapper  pt-5 pb-5">
+                  <div class="divider div-transparent"></div>
+                </div>
+                <h2 class="mb-5" ><span>Thông tin đăng ký</span></h2>
+                <v-form ref="form" v-model="valid" lazy-validation>
+                  <v-text-field outlined v-model="name" :rules="nameRules" required>
+                    <template slot="label">
+                      Họ tên Bố/Mẹ <span class="red--text">(*)</span>
+                    </template>
+                  </v-text-field>
+                  <v-text-field outlined v-model="phone" :rules="phoneRules" required>
+                    <template slot="label">
+                      Số điện thoại Bố/Mẹ <span class="red--text">(*)</span>
+                    </template>
+                  </v-text-field>
+                  <v-text-field label="Email" outlined hide-details class="mb-3">
+
+                  </v-text-field>
+                  <v-btn @click="validate" rounded color="orange darken-1" class='float-right' width="160">
+                    <strong class="white--text">ĐĂNG KÝ</strong>
+                  </v-btn>
+                </v-form>
+
+              </v-flex>
+
+            </v-layout>
+          </v-card-text>
         </v-card>
+
+        <div class="bottom-bar">
+          <div style="width:40%" class="float-left text-left">
+            <a href="https://www.facebook.com/tamtriluc" title="Fan page chúng tôi">
+              <v-icon color="primary">mdi-facebook-box</v-icon>
+            </a>
+            <a href="https://www.youtube.com/channel/UCM0bv1L91C8-z71gAzrLBCQ" title="Kênh Youtube chúng tôi">
+              <v-icon color="red">mdi-youtube</v-icon>
+            </a>
+          </div>
+          <div class="float-right text-right" style="width: 50%">
+            <v-icon color="white"> mdi-phone</v-icon> 0939.279.868
+          </div>
+          <div class="wrapper mt-2 pt-5 mb-0">
+            <div class="divider div-transparent"></div>
+          </div>
+          <p class="ma-0 text-center primary--text">@2019 - Bản quyền của công ty Tâm Trí Lực</p>
+        </div>
       </v-content>
     </v-app>
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="dist/countdown.js"></script>
+
   <script>
     new Vue({
       el: '#app',
       vuetify: new Vuetify(),
+      data() {
+        return {
+          valid: true,
+          name: '',
+          nameRules: [
+            v => !!v || 'Vui lòng nhập tên Bố/Mẹ'
+          ],
+          phone: '',
+          phoneRules: [
+            v => !!v || 'Vui lòng nhập số điện thoại'
+          ],
+        }
+      },
+      methods: {
+        validate() {
+          if (this.$refs.form.validate()) {
+
+          }
+        }
+      },
+      computed: {
+        isPhone() {
+          return this.$vuetify.breakpoint.name === 'xs'
+        }
+      },
     })
   </script>
+
 </body>
+
 </html>
