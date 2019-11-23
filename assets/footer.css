@@ -1,0 +1,501 @@
+
+
+footer {
+    padding-top: 30px;
+    background-color: #6771ff
+}
+
+@media (max-width:767px) {
+    footer {
+        padding: 30px 0
+    }
+}
+
+@media (min-width:720px) {
+    footer .container {
+        max-width: 1170px
+    }
+}
+
+footer .footer-top {
+    padding-bottom: 15px
+}
+
+@media (max-width:992px) {
+    footer .footer-top {
+        padding-bottom: 10px
+    }
+}
+
+footer .footer-top h4 {
+    font-family: SVN-Boing;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 6px
+}
+
+@media (min-width:720px) {
+    footer .footer-top .group-list-course {
+        float: left;
+        max-width: 208px
+    }
+}
+
+@media (min-width:992px) {
+    footer .footer-top .group-list-course {
+        max-width: none
+    }
+}
+
+footer .footer-top .social {
+    float: left;
+    max-width: 300px;
+    margin-right: 100px
+}
+
+@media (max-width:1140px) {
+    footer .footer-top .social {
+        margin-right: 50px
+    }
+}
+
+footer .footer-top .social .social-icon {
+    margin-bottom: 25px;
+    margin-top: 9px
+}
+
+footer .footer-top .social .social-icon a:hover .logo-fb {
+    /* content: url(/landing-page/home/images/fb-icon-hover.svg) */
+}
+
+footer .footer-top .social .social-icon a:hover .logo-youtube {
+    /* content: url(/landing-page/home/images/youtube-icon-hover.svg) */
+}
+
+footer .footer-top .social .social-icon a:hover .logo-zalo {
+    /* content: url(/landing-page/home/images/zalo-icon-hover.svg) */
+}
+
+footer .footer-top .social .social-icon img {
+    width: 50px
+}
+
+footer .footer-top .social .social-contact {
+    position: relative
+}
+
+footer .footer-top .social .social-contact li {
+    padding-bottom: 25px
+}
+
+footer .footer-top .social .social-contact li:hover p {
+    text-decoration: underline
+}
+
+footer .footer-top .social .social-contact li i {
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    left: 5px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1)
+}
+
+footer .footer-top .social .social-contact li p {
+    color: #fff;
+    padding-left: 35px;
+    font-size: 14px;
+    font-weight: 400
+}
+
+footer .footer-top .social button {
+    padding: 13px 48px;
+    border-radius: 32px;
+    width: 225px;
+    background-image: linear-gradient(to right, #3ac5f1, #33eace);
+    color: #fff;
+    font-family: 'SVN-Boing', sans-serif;
+    font-size: 20px;
+    font-weight: 600
+}
+
+footer .footer-top .list-courses {
+    float: left;
+    margin-right: 130px
+}
+
+@media (max-width:1140px) {
+    footer .footer-top .list-courses {
+        margin-right: 70px
+    }
+}
+
+@media (max-width:992px) {
+    footer .footer-top .list-courses {
+        margin-right: 0;
+        margin-bottom: 0
+    }
+}
+
+footer .footer-top .list-courses ul {
+    margin-bottom: 25px
+}
+
+footer .footer-top .list-courses ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.14
+}
+
+footer .footer-top .list-courses ul li a:hover {
+    text-decoration: underline
+}
+
+footer .footer-top .info {
+    float: left
+}
+
+footer .footer-top .info ul {
+    margin-bottom: 25px
+}
+
+footer .footer-top .info ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.14
+}
+
+footer .footer-top .info ul li a:hover {
+    text-decoration: underline
+}
+
+footer .footer-top .info .card-product:last-child {
+    width: 141px
+}
+
+footer .footer-top .info .card-product {
+    border-radius: 10px;
+    background-color: #fff;
+    height: 40px;
+    margin: 8px 0 15px;
+    width: 132px
+}
+
+footer .footer-top .info .card-product a {
+    display: block;
+    padding: 5px 0;
+    text-align: center
+}
+
+footer .footer-top .info .card-product a:hover img {
+    transform: scale(1.1)
+}
+
+footer .footer-top .info .card-product a img {
+    height: 30px;
+    width: auto;
+    margin: 0 auto;
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out
+}
+
+footer .footer-top .fanpage {
+    float: right;
+    max-width: 255px
+}
+
+@media (max-width:1023px) {
+    footer .footer-top .fanpage {
+        float: left
+    }
+}
+
+footer .footer-bot .col-4:nth-child(2) .card-product {
+    margin: 0 auto
+}
+
+footer .footer-bot .col-4:nth-child(2) p {
+    margin: 0 auto
+}
+
+footer .footer-bot .col-4:nth-child(3) .card-product {
+    float: right
+}
+
+footer .footer-bot .col-4:nth-child(3) p {
+    float: right
+}
+
+footer .footer-bot h4 {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 25px
+}
+
+footer .footer-bot h4 span {
+    font-weight: 600
+}
+
+footer .footer-bot p {
+    font-size: 14px;
+    line-height: 1.43;
+    color: #fff;
+    text-align: center;
+    max-width: 190px;
+    font-weight: 400;
+    padding-top: 5px
+}
+
+footer .footer-bot .footer-product {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px 0 30px
+}
+
+@media (max-width:1140px) {
+    footer .footer-bot .footer-product {
+        width: 650px
+    }
+}
+
+footer .footer-bot .footer-product .card-product {
+    border-radius: 10px;
+    background-color: #fff;
+    height: 55px;
+    width: 190px
+}
+
+footer .footer-bot .footer-product .card-product a {
+    display: block;
+    padding: 6px 0;
+    text-align: center
+}
+
+footer .footer-bot .footer-product .card-product a:hover img {
+    transform: scale(1.1)
+}
+
+footer .footer-bot .footer-product .card-product a img {
+    height: 42px;
+    width: auto;
+    margin: 0 auto;
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out
+}
+
+footer .sp-visp-visitor-footer a {
+    color: #fff;
+    margin-bottom: 15px;
+    display: inline-block;
+    font-size: 14px
+}
+
+footer .sp-visitor-footer {
+    margin: 0 35px
+}
+
+@media (max-width:424px) {
+    footer .sp-visitor-footer {
+        margin: 0 15px
+    }
+}
+
+@media (max-width:374px) {
+    footer .sp-visitor-footer {
+        margin: 0 2px
+    }
+}
+
+footer .sp-visitor-footer .sp-visitor-contact {
+    margin-bottom: 30px
+}
+
+@media (max-width:424px) {
+    footer .sp-visitor-footer .sp-visitor-contact .col-6 {
+        padding-right: 4px;
+        padding-left: 4px
+    }
+}
+
+footer .sp-visitor-footer .sp-visitor-contact a {
+    display: block;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 10px 15px;
+    text-align: center;
+    width: 150px
+}
+
+footer .sp-visitor-footer .sp-visitor-contact a i {
+    font-size: 18px;
+    padding-bottom: 5px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    display: block
+}
+
+footer .sp-visitor-footer .sp-visitor-contact a p {
+    display: inline;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    top: -3px
+}
+
+footer .sp-visitor-footer .sp-visitor-menu {
+    text-align: center;
+    color: #fff
+}
+
+footer .sp-visitor-footer .sp-visitor-menu div {
+    margin: 10px 0 5px 0
+}
+
+footer .sp-visitor-footer .sp-visitor-menu a {
+    text-decoration: underline;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500
+}
+
+footer .sp-visitor-footer .sp-visitor-social {
+    max-width: 250px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px
+}
+
+@media (max-width:424px) {
+    footer .sp-visitor-footer .sp-visitor-social {
+        max-width: 220px
+    }
+    footer .sp-visitor-footer .sp-visitor-social a img {
+        width: 42px
+    }
+}
+
+.visitor-copyright {
+    background-color: #fff
+}
+
+@media (min-width:720px) {
+    .visitor-copyright .container {
+        max-width: 1170px
+    }
+}
+
+.visitor-copyright .anchor-tag {
+    padding: 30px 0;
+    border-bottom: solid 1px #ddd
+}
+
+.visitor-copyright .anchor-tag span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.9
+}
+
+.visitor-copyright .anchor-tag span a {
+    color: #0059b3
+}
+
+.visitor-copyright .anchor-tag span a:hover {
+    text-decoration: underline
+}
+
+.visitor-copyright .anchor-tag i {
+    color: #0059b3;
+    font-size: 4px;
+    padding: 2px;
+    position: relative;
+    bottom: 3px
+}
+
+.visitor-copyright .info-address {
+    padding: 30px 0
+}
+
+.visitor-copyright .info-address .col-8 .text p {
+    line-height: 1.43;
+    font-size: 14px;
+    color: #333;
+    font-weight: 400
+}
+
+.visitor-copyright .info-address .col-4 {
+    text-align: right;
+    margin-top: -5px
+}
+
+.visitor-copyright .info-address .col-4 .pretext {
+    line-height: 1.43;
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    padding-top: 5px
+}
+
+.visitor-copyright .info-address .col-4 ul li {
+    display: inline;
+    margin-left: 45px
+}
+
+@media (max-width:1140px) {
+    .visitor-copyright .info-address .col-4 ul li {
+        margin-left: 0;
+        display: block
+    }
+}
+
+.visitor-copyright .info-address .col-4 ul li a {
+    font-size: 14px;
+    color: #0059b3
+}
+
+.visitor-copyright .info-address .col-4 ul li a:hover {
+    text-decoration: underline
+}
+
+#toggle-chat {
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 7px;
+    border: 2px solid #f4f9ff;
+    background-color: #50ad4e;
+    z-index: 4
+}
+
+#toggle-chat img {
+    position: absolute;
+    left: 11px;
+    top: 7px;
+    width: 36px;
+    height: 33px;
+    object-fit: contain
+}
+
+#toggle-chat span {
+    position: absolute;
+    left: 9px;
+    bottom: 3px;
+    width: 41px;
+    height: 16px;
+    font-family: SFProText;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff
+}
