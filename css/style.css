@@ -12233,7 +12233,8 @@ a:hover {
     top: 0;
     left: 0;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    padding-left:20px;
 }
 
 .slick-track:after,
@@ -14052,4 +14053,5 @@ iframe {
 iframe.moms {
     width: 95%;
     height: 300px;
+    margin: 5px 0 0 10px;
 }
