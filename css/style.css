@@ -12663,29 +12663,50 @@ a {
 }
 
 #banner {
-    padding: 25px 0 75px
+    padding: 10px 0 75px
 }
 
 #banner .logo {
-    width: 120px;
+    width: 160px;
     margin: 0 auto 20px;
     display: block
 }
+#banner .logo-lap {
+    width: 300px;
+    margin: 0 auto 20px;
+    display: block
+}
+
 
 #banner .title-img {
     width: 235px;
     margin-bottom: 20px
 }
 
+.mmtn-font{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
 @media (min-width:992px) {
     #banner {
-        padding: 95px 0 150px;
-        position: relative
+        padding: 150px 0 150px;
+        position: relative;
     }
     #banner .decor1 {
         position: absolute;
         top: 0;
         left: 0
+    }
+    #banner .decor3 {
+        position: absolute;
+        top: 0px;
+        left: 350px;
+    }
+    #banner .decor4 {
+        position: absolute;
+        top: 80px;
+        right: 350px;
+        font-size: 30px;
     }
     #banner .decor2 {
         position: absolute;
@@ -12725,6 +12746,15 @@ a {
     font-size: 18px;
     margin-bottom: 20px;
     font-weight: 700
+}
+
+h2.title{
+ font-size: 1.8em;
+  background: -webkit-linear-gradient(#E87D59, rgb(243, 214, 48));
+  -webkit-background-clip: text;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  
 }
 
 @media (min-width:992px) {
