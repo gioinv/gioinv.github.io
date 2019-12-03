@@ -12247,6 +12247,7 @@ a:hover {
     clear: both
 }
 
+
 .slick-slide {
     display: none;
     float: left;
@@ -12749,11 +12750,19 @@ a {
 }
 
 h2.title{
- font-size: 1.8em;
-  background: -webkit-linear-gradient(#E87D59, rgb(243, 214, 48));
-  -webkit-background-clip: text;
-  font-weight: bold;
-  -webkit-text-fill-color: transparent;
+ font-size: 1.5em;
+ 
+ font-family: "Comic Sans MS", cursive, sans-serif;
+
+letter-spacing: 0px;
+word-spacing: 2px;
+color: #FFBD3B;
+font-weight: 800;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: uppercase;
+margin-bottom: 10px;
   
 }
 
@@ -13065,7 +13074,7 @@ h2 span {
     }
     #content .content-card2 img {
         width: auto;
-        bottom: -95px
+        
     }
 }
 
@@ -13083,12 +13092,12 @@ h2 span {
 }
 
 #teacher {
-    padding: 40px 0
+    padding: 20px 0
 }
 
 @media (min-width:992px) {
     #teacher {
-        padding: 80px 0 160px;
+        padding: 40px 0 160px;
         position: relative
     }
     #teacher .decor6 {
@@ -13102,7 +13111,7 @@ h2 span {
         right: 0
     }
     #teacher .teacher-card {
-        max-width: 700px;
+        max-width: 800px;
         margin: 0 auto;
         position: relative
     }
@@ -13163,8 +13172,14 @@ h2 span {
     }
     #teacher .teacher-card ul {
         position: absolute;
-        bottom: -15px;
+        bottom: -120px;
         left: 300px
+    }
+    .summary{
+        margin: 0 0 20px 0;
+        text-align: left;
+        text-indent: 10px;
+
     }
 }
 
@@ -13396,8 +13411,8 @@ h2 span {
     z-index: 9
 }
 
-#celeb .wrapper-slider-box .slick-slider .slick-dots li img {
-    width: 163px
+#celeb   .slick-dots li img {
+    
 }
 
 #celeb .wrapper-slider-box .slick-slider .slick-dots li button {
@@ -13405,7 +13420,7 @@ h2 span {
 }
 
 #celeb .wrapper-slider-box .slick-slider .item {
-    margin: 0 10px;
+    margin: 0 ;
     box-shadow: 0 9px 20px 2px rgba(0, 0, 0, .37);
     border-radius: 30px
 }
@@ -13637,18 +13652,19 @@ h2 span {
     position: relative;
     padding: 0 0 0 90px;
     margin: 20px 15px 0;
-    text-align: left
+    text-align: left;
 }
 
-#register .wrapper .promotion .special-note span {
+ span.gift {
     color: #ffdd6e;
     background-color: #8050c2;
     padding: 5px 10px;
     border-radius: 20px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%)
+   
+    
+}
+#register .wrapper .promotion .special-note span.text-gift {
+    margin:0 0 0 20px;
 }
 
 #register .title-clock {
@@ -13763,7 +13779,7 @@ h2 span {
     top: -13px
 }
 
-#register form .gr-input input {
+#register form .gr-input input, #register form .gr-input select {
     width: 100%;
     padding: 25px 20px 12px;
     border-radius: 10px;
@@ -13778,7 +13794,12 @@ h2 span {
     color: #888;
     font-style: italic
 }
-
+select:required:invalid {
+    color: gray;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
 #register form .btn-register {
     background-image: -moz-linear-gradient(52deg, #ffc078 0, #ffac63 41%, #ff984d 100%);
     background-image: -webkit-linear-gradient(52deg, #ffc078 0, #ffac63 41%, #ff984d 100%);
@@ -14084,4 +14105,77 @@ iframe.moms {
     width: 95%;
     height: 300px;
     margin: 5px 0 0 10px;
+}
+
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+	top: 2em;
+  
+  width: 60%;
+  
+  font-size: 1.4em;
+
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+
+}
+.bg-purple{
+    background: #8050c2;
+    border-radius: 30px;
+    padding: 20px;
+    color: white;
+}
+.student-img{
+    border-radius: 30px;
+}
+.slick-prev, .slick-next{
+    width: 40px !important;
+}
+.slick-next:before, .slick-prev:before{
+    font-size: 30px !important;
+}
+.student-feedback p span.name{
+    color:#ff984d;
+    font-weight: bold;
+}
+.student-feedback p span.awards{
+    font-size: .8em;
+}
+.student-feedback p.speech{
+    font-size: .9em;
+    font-style: italic;
 }
