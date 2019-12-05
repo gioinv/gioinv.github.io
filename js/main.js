@@ -6,7 +6,7 @@ $(document).ready(function() {
         arrows:true
     });
 
-    $('#successModal').modal('show')
+    //$('#successModal').modal('show')
 });
 
 function makeTimer() {
