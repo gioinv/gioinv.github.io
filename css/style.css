@@ -12684,9 +12684,6 @@ a {
     margin-bottom: 20px
 }
 
-.mmtn-font{
-    font-family: "Comic Sans MS", cursive, sans-serif;
-}
 
 @media (min-width:992px) {
     #banner {
@@ -12749,22 +12746,7 @@ a {
     font-weight: 700
 }
 
-h2.title{
- font-size: 1.5em;
- 
- font-family: "Comic Sans MS", cursive, sans-serif;
 
-letter-spacing: 0px;
-word-spacing: 2px;
-color: #FFBD3B;
-font-weight: 800;
-text-decoration: none;
-font-style: normal;
-font-variant: normal;
-text-transform: uppercase;
-margin-bottom: 10px;
-  
-}
 
 @media (min-width:992px) {
     #banner h1 {
@@ -13452,7 +13434,7 @@ h2 span {
 
 @media (min-width:992px) {
     #reason {
-        padding: 95px 0 150px;
+        padding: 10px 0 150px;
         position: relative
     }
     #reason .decor10 {
@@ -13469,7 +13451,7 @@ h2 span {
         text-align: left
     }
     #reason .reason-content {
-        padding-left: 500px
+        
     }
 }
 
@@ -14178,4 +14160,31 @@ iframe.moms {
 .student-feedback p.speech{
     font-size: .9em;
     font-style: italic;
+}
+
+h2.title{
+   font-size: 1.9em; 
+   color: #FFBD3B;
+   font-weight: 600;
+   text-decoration: none;
+   font-style: normal;
+   font-variant: normal;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   text-shadow: 1px 2px 1px rgba(150, 150, 150, 1);  
+}
+
+.mmtn-font,.mmtn-font-phone{
+    font-family: ssans-serif;
+    font-size: 1.8em;
+    text-shadow: 1px 2px 1px rgba(150, 150, 150, 1);
+}
+.mmtn-font{    
+    float: right;
+    position: absolute;
+    top:30px;
+    right: 10%;
+}
+.mmtn-font-phone{
+    padding-bottom: 10px;
 }
