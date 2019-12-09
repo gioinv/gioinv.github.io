@@ -13410,7 +13410,8 @@ h2 span {
 @media (min-width:1200px) {
     #celeb .wrapper-slider-box .slick-slider .item {
         position: relative;
-        overflow: hidden
+        overflow: hidden;
+        margin-left: 10px;
     }
     #celeb .wrapper-slider-box .slick-slider .item.slick-active:before {
         display: none
@@ -13418,7 +13419,7 @@ h2 span {
     #celeb .wrapper-slider-box .slick-slider .item:before {
         content: '';
         display: block;
-        position: absolute;
+        
         left: 0;
         top: 0;
         width: 100%;
