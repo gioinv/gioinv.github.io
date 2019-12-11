@@ -454,81 +454,73 @@
 
         <div class="row">
           <div class="col-lg-12">
-            <form name="landing-page-id">
+            <form name="dangky">
               <div class="row">
                 <div class="col-lg-12">
                   <div id="form-register" class="title-form">Đăng ký khóa học</div>
                   <div class="wrapper-input gr-input">
                     <label for="fullname">Danh xưng</label>
-                    <select required="">
+                    <select required="" name="anhchi">
                       <option value="" disabled selected>Anh/Chị</option>
-                      <option value="0">Anh</option>
-                      <option value="1">Chị</option>
+                      <option value="anh">Anh</option>
+                      <option value="chi">Chị</option>
                     </select>
                   </div>
                   <div class="wrapper-input gr-input">
                     <label for="fullname">Họ và tên*</label>
-                    <input type="text" placeholder="Điền họ và tên của bạn..." name="firstName" id="name" required="">
+                    <input type="text" placeholder="Điền họ và tên của bạn..." name="hoten" required="">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="wrapper-input gr-input">
                     <label for="">Số điện thoại*</label>
-                    <input type="number" placeholder="Điền số điện thoại của bạn..." name="phonenumber" id="phone"
+                    <input type="number" placeholder="Điền số điện thoại của bạn..." name="sdt"
                       required="">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="wrapper-input gr-input">
                     <label for="">Email</label>
-                    <input type="email" placeholder="Bỏ trống nếu bạn không có..." name="email" id="email">
+                    <input type="email" placeholder="Bỏ trống nếu bạn không có..." name="email" id="email"  required="">
                   </div>
                 </div>
               </div>
               <p class="text-center">
-                <button type="submit" class="btn-register btn-register-now" id="btn-register-now">Đăng
+                <button type="submit" class="btn-register btn-register-now" id="dkBtn">Đăng
                   kí ngay !</button>
               </p>
-              <div class="handle" style="display:none">
-                <iframe style="display:none" id="learning-iframe-manage-exchange-data" width="0" height="0"
-                  src="assets/manage-exchange-learning-data.html"></iframe>
-                <input type="text" id="name-package" value="Học siêu trí nhớ cùng kỷ lục gia Nguyễn Phùng Phong">
-                <input type="text" id="package_slug" value="hoc-sieu-tri-nho-cung-ky-luc-gia">
-                <input type="text" id="landing-page-name" value="Phương pháp giúp con thông minh">
-                <input type="text" id="landing-page-slug" value="khoa-hoc/phuong-phap-giup-con-thong-minh">
-              </div>
+              
             </form>
           </div>
           <div class="col-lg-12">
-            <form name="landing-page-id">
+            <form id="tuvan" class="gform pure-form pure-form-stacked" >
                 <div class="title-form">Đăng ký tư vấn miễn phí</div>
               <div class="row">
                 <div class="col-lg-4">
                   
                   <div class="wrapper-input gr-input">
                     <label for="fullname">Họ và tên*</label>
-                    <input type="text" placeholder="Điền họ và tên của bạn..." name="firstName" id="name" required="">
+                    <input type="text" placeholder="Điền họ và tên của bạn..." id="hotenTv" required="">
                   </div>
                 </div>
                 <div class="col-lg-4">
                   <div class="wrapper-input gr-input">
                     <label for="">Số điện thoại*</label>
-                    <input type="number" placeholder="Điền số điện thoại của bạn..." name="phonenumber" id="phone"
+                    <input type="number" placeholder="Điền số điện thoại của bạn..." id="sdtTv"
                       required="">
                   </div>
                 </div>
                 <div class="col-lg-4">
                   <div class="wrapper-input gr-input">
                     <label for="">Câu hỏi</label>
-                    <input type="text" placeholder="Ghi câu hỏi của bạn..." name="quesstion" id="quesstion">
+                    <input type="text" placeholder="Ghi câu hỏi của bạn..." id="cauhoiTv">
                   </div>
                 </div>
               </div>
               <p class="text-center">
-                <button type="submit" class="btn-register btn-register-now" id="btn-register-now">Tư vấn cho tôi
-                  !</button>
+                <button type="submit" class="btn-register btn-register-now" id="tuvanBtn">Tư vấn cho tôi 
+                  ! <span id="spinTv" style="display: none;"><img src="assets/ajax-loader.gif" alt=""></span></button>
               </p>
-              
             </form>
           </div>
         </div>
