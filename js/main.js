@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  var regist_msg = 'Chúc mừng bạn đã nhận được ưu đãi từ MMTN.VN!';
+  var consult_msg = 'Chúc mừng bạn đã gửi câu hỏi thành công tới MMTN.VN!';
   var errorMsg = 'Không thể gửi thông tin!\n Vui lòng lien lạc ban quản trị để biết thông tin chi tiết.';
 
   $('a').smoothScroll();
@@ -33,6 +35,8 @@ $(document).ready(function () {
 
     window.receipt = function (res) {
       if (res.success) {
+        $('#message').text(consult_msg);
+
         $('#successModal').modal('show');
         $("form#tuvan").trigger("reset");
       } else {
@@ -42,7 +46,7 @@ $(document).ready(function () {
       $('#spinTv').hide()
     }
   });
-
+  
   $("form#dangky").on("submit", function (e) {
     e.preventDefault();
     $('#spinDk').show()
@@ -71,6 +75,7 @@ $(document).ready(function () {
     window.receipt = function (res) {
       
       if (res.success) {
+        $('#message').text(regist_msg);
         $('#successModal').modal('show');
         $("form#dangky").trigger("reset");
       } else {
