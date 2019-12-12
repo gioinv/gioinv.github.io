@@ -454,13 +454,13 @@
 
         <div class="row">
           <div class="col-lg-12">
-            <form name="dangky">
+            <form id="dangky">
               <div class="row">
                 <div class="col-lg-12">
                   <div id="form-register" class="title-form">Đăng ký khóa học</div>
                   <div class="wrapper-input gr-input">
                     <label for="fullname">Danh xưng</label>
-                    <select required="" name="anhchi">
+                    <select required="" id="anhchi">
                       <option value="" disabled selected>Anh/Chị</option>
                       <option value="anh">Anh</option>
                       <option value="chi">Chị</option>
@@ -468,26 +468,26 @@
                   </div>
                   <div class="wrapper-input gr-input">
                     <label for="fullname">Họ và tên*</label>
-                    <input type="text" placeholder="Điền họ và tên của bạn..." name="hoten" required="">
+                    <input type="text" placeholder="Điền họ và tên của bạn..." id="hoten" required="">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="wrapper-input gr-input">
                     <label for="">Số điện thoại*</label>
-                    <input type="number" placeholder="Điền số điện thoại của bạn..." name="sdt"
+                    <input type="number" placeholder="Điền số điện thoại của bạn..." id="sdt"
                       required="">
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="wrapper-input gr-input">
                     <label for="">Email</label>
-                    <input type="email" placeholder="Bỏ trống nếu bạn không có..." name="email" id="email"  required="">
+                    <input type="email" placeholder="Bỏ trống nếu bạn không có..." id="email" required="">
                   </div>
                 </div>
               </div>
               <p class="text-center">
                 <button type="submit" class="btn-register btn-register-now" id="dkBtn">Đăng
-                  kí ngay !</button>
+                  kí ngay !<span id="spinDk" style="display: none;"><img src="assets/ajax-loader.gif" alt=""></span></button>
               </p>
               
             </form>
@@ -546,7 +546,7 @@
               <h3>ĐĂNG KÝ THÀNH CÔNG</h3>
               <h4>Cảm ơn bạn đã đăng ký thành công!</h4>
               <p>Nhân viên CSKH sẽ sớm liên hệ với bạn trong vòng 24 giờ.</p>
-              <p>Hotline: <b>1900.6364.09</b> - Email: <b>info@matmatainang.vn</b></p>
+              <p>Hotline: <b>0939.279.868</b> - Email: <b>info@matmatainang.vn</b></p>
             </div>
           </div>
         </div>

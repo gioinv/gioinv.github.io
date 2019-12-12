@@ -13748,7 +13748,7 @@ h2 span {
 #register form .gr-input {
     width: 100%;
     position: relative;
-    margin-bottom: 40px
+    margin-bottom: 40px;
 }
 
 #register form .gr-input label {
@@ -13759,7 +13759,7 @@ h2 span {
     background: #f68e56;
     border-radius: 20px 20px 20px 0;
     padding: 3px 20px;
-    top: -13px
+    top: -13px;
 }
 
 #register form .gr-input input, #register form .gr-input select {
