@@ -13672,13 +13672,14 @@ h2 span {
 
 #register .title-form {
     color: #ffdd6e;
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    font-size: 30px;
 }
 
 @media (min-width:992px) {
     #register .title-form {
         margin-bottom: 45px;
-        font-size: 24px;
+        font-size: 34px;
         font-weight: 700
     }
 }

@@ -17,6 +17,7 @@ $(document).ready(function () {
       url: "https://script.google.com/macros/s/AKfycbzctdc_JfS_0IYKpYzBvS9NlHWeHWg6jHGHR08s-NoTE-2QWsU9/exec",
       type: "POST",
       data: {
+        anhchi: $('#anhchiTv').val(),
         hoten: $('#hotenTv').val(),
         sdt: '\'' + $('#sdtTv').val(),
         cauhoi: $('#cauhoiTv').val()
