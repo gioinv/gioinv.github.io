@@ -1,0 +1,15 @@
+[
+{"type":"header","version":"5.0.4","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"vikhuan"},
+{"type":"table","name":"classifies","database":"vikhuan","data":
+[
+{"id":"1","name":"Giới (Kingdom)","created_at":"2019-11-02 17:41:14","updated_at":"2019-11-02 17:41:14"},
+{"id":"2","name":"Ngành (Division)","created_at":"2019-11-02 17:41:15","updated_at":"2019-11-02 17:41:15"},
+{"id":"3","name":"Lớp (Class)","created_at":"2019-11-02 17:41:15","updated_at":"2019-11-02 17:41:15"},
+{"id":"4","name":"Bộ (Order)","created_at":"2019-11-02 17:41:15","updated_at":"2019-11-02 17:41:15"},
+{"id":"5","name":"Họ (Family)","created_at":"2019-11-02 17:41:15","updated_at":"2019-11-02 17:41:15"},
+{"id":"6","name":"Chi (Genus)","created_at":"2019-11-02 17:41:15","updated_at":"2019-11-02 17:41:15"},
+{"id":"7","name":"Loài (Species)","created_at":"2019-11-02 17:41:15","updated_at":"2019-11-02 17:41:15"}
+]
+}
+]

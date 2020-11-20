@@ -1,0 +1,32 @@
+[
+{"type":"header","version":"5.0.4","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"vikhuan"},
+{"type":"table","name":"bacterias","database":"vikhuan","data":
+[
+{"id":"1","name":"Bacillus subtilis","symbol":"B20.1","code":"RIA2.V001","source_isolated":"Ruột, Ao cá tra thương phẩm, An Giang","locationId":"1","categoryId":"1","description":null,"created_at":"2019-11-02 17:41:16","updated_at":"2019-11-02 17:41:16"},
+{"id":"2","name":"Bacillus polyfermenticus","symbol":"B8","code":null,"source_isolated":"Bùn, ao cá tra thương phẩm, Đồng Tháp","locationId":null,"categoryId":"1","description":null,"created_at":"2019-11-02 17:41:16","updated_at":"2019-11-02 17:41:16"},
+{"id":"3","name":"Weisella paramesenteroides","symbol":"L111","code":null,"source_isolated":"Ruột, ao giống cá tra, Vĩnh Long","locationId":null,"categoryId":"1","description":null,"created_at":"2019-11-02 17:41:16","updated_at":"2019-11-02 17:41:16"},
+{"id":"4","name":"Bacillus amyloliquefaciens","symbol":"BA1","code":null,"source_isolated":"Nước, ao nuôi tôm thẻ, Cần Giờ","locationId":null,"categoryId":"2","description":null,"created_at":"2019-11-02 17:41:16","updated_at":"2019-11-02 17:41:16"},
+{"id":"5","name":"Bacillus flexus","symbol":"B4.2.2","code":null,"source_isolated":"Bùn, ao cá tra thịt, Đồng Tháp","locationId":null,"categoryId":null,"description":null,"created_at":"2019-11-02 17:41:16","updated_at":"2019-11-02 17:41:16"},
+{"id":"6","name":"Pediococcus acidilactici","symbol":"L61","code":null,"source_isolated":"Ruột, cá tra giống, An giang","locationId":null,"categoryId":null,"description":null,"created_at":"2019-11-02 17:41:16","updated_at":"2019-11-02 17:41:16"},
+{"id":"7","name":"Lactobacillus plantarum","symbol":"L108","code":null,"source_isolated":"Ruột, cá tra thương phẩm, Vĩnh Long","locationId":null,"categoryId":"3","description":null,"created_at":"2019-11-02 17:41:16","updated_at":"2019-11-02 17:41:16"},
+{"id":"8","name":"Bacillus subtilis","symbol":"N4.2.2","code":null,"source_isolated":"Nước, ao cá tra thương phẩm, Vĩnh Long","locationId":null,"categoryId":"3","description":null,"created_at":"2019-11-02 17:41:16","updated_at":"2019-11-02 17:41:16"},
+{"id":"9","name":"Bacillus amyloliquefaciens","symbol":"N6.1","code":null,"source_isolated":"Nước, ao cá tra giống, Vĩnh Long","locationId":null,"categoryId":"3","description":null,"created_at":"2019-11-02 17:41:16","updated_at":"2019-11-02 17:41:16"},
+{"id":"10","name":"Bacillus polyfermenticus","symbol":"B8","code":null,"source_isolated":"Bùn, ao cá tra thương phẩm, Đồng Tháp","locationId":null,"categoryId":"4","description":null,"created_at":"2019-11-02 17:41:16","updated_at":"2019-11-02 17:41:16"},
+{"id":"11","name":"Bacillus subtilis","symbol":"N26.3","code":null,"source_isolated":"Nước, ao cá tra giống, Đồng Tháp","locationId":null,"categoryId":"4","description":null,"created_at":"2019-11-02 17:41:16","updated_at":"2019-11-02 17:41:16"},
+{"id":"12","name":"Bacillus flexus","symbol":"B4.2.2","code":null,"source_isolated":"Nước, ao cá tra thương phẩm, Vĩnh Long","locationId":null,"categoryId":"4","description":null,"created_at":"2019-11-02 17:41:16","updated_at":"2019-11-02 17:41:16"},
+{"id":"13","name":"Bacillus pumilus","symbol":"N19.2","code":null,"source_isolated":"Nước, ao cá tra TP","locationId":null,"categoryId":"5","description":null,"created_at":"2019-11-02 17:41:16","updated_at":"2019-11-02 17:41:16"},
+{"id":"14","name":"Bacillus flexus","symbol":"B4.2.2","code":null,"source_isolated":"Bùn, ao cá tra TP","locationId":null,"categoryId":"5","description":null,"created_at":"2019-11-02 17:41:16","updated_at":"2019-11-02 17:41:16"},
+{"id":"15","name":"Bacillus cereus","symbol":"N10.2","code":null,"source_isolated":"Nước, ao cá tra TP","locationId":null,"categoryId":"5","description":null,"created_at":"2019-11-02 17:41:16","updated_at":"2019-11-02 17:41:16"},
+{"id":"16","name":"Bacillus megaterium","symbol":"BM1","code":null,"source_isolated":"Nước, ao nuôi tôm thẻ, Cần Giờ","locationId":null,"categoryId":"6","description":null,"created_at":"2019-11-02 17:41:17","updated_at":"2019-11-02 17:41:17"},
+{"id":"17","name":"Bacillus amyloliquefaciens","symbol":"BA1","code":null,"source_isolated":"Nước, ao nuôi tôm thẻ, Cần Giờ","locationId":null,"categoryId":"7","description":null,"created_at":"2019-11-02 17:41:17","updated_at":"2019-11-02 17:41:17"},
+{"id":"18","name":"Bacillus subtilis","symbol":"VK2.HHN","code":null,"source_isolated":"Bùn, ao nuôi tôm thẻ, Cần Giờ","locationId":null,"categoryId":"7","description":null,"created_at":"2019-11-02 17:41:17","updated_at":"2019-11-02 17:41:17"},
+{"id":"19","name":"Rhodopseudomonas palustris","symbol":"","code":null,"source_isolated":"khu đầm nuôi thủy sản ở Cần giờ","locationId":null,"categoryId":"8","description":null,"created_at":"2019-11-02 17:41:17","updated_at":"2019-11-02 17:41:17"},
+{"id":"20","name":"Rhodopseudomonas rhenobacensis","symbol":"","code":null,"source_isolated":"khu đầm nuôi thủy sản ở Cần giờ","locationId":null,"categoryId":"8","description":null,"created_at":"2019-11-02 17:41:17","updated_at":"2019-11-02 17:41:17"},
+{"id":"21","name":"Rhodobacter sphaeroides","symbol":"RL1.2","code":null,"source_isolated":"Rừng ngậm mặn Năm Can, Cà Mau","locationId":"12","categoryId":"8","description":null,"created_at":"2019-11-02 17:41:17","updated_at":"2019-11-02 17:41:17"},
+{"id":"22","name":"Thiobacillus denitrificans","symbol":"","code":null,"source_isolated":"trong đất, bùn, nước ngọt và trầm tích biển, nước thải và ao","locationId":null,"categoryId":"9","description":null,"created_at":"2019-11-02 17:41:17","updated_at":"2019-11-02 17:41:17"},
+{"id":"23","name":"Thiobacillus ferroxidans","symbol":"","code":null,"source_isolated":"","locationId":null,"categoryId":"9","description":null,"created_at":"2019-11-02 17:41:17","updated_at":"2019-11-02 17:41:17"},
+{"id":"24","name":"Thiobacillus versutus","symbol":"","code":null,"source_isolated":"","locationId":null,"categoryId":"9","description":null,"created_at":"2019-11-02 17:41:17","updated_at":"2019-11-02 17:41:17"}
+]
+}
+]

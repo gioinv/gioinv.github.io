@@ -1,0 +1,15 @@
+[
+{"type":"header","version":"5.0.4","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"vikhuan"},
+{"type":"table","name":"characteristics","database":"vikhuan","data":
+[
+{"id":"1","name":"Hình Thái","created_at":"2019-11-02 17:41:13","updated_at":"2019-11-02 17:41:13"},
+{"id":"2","name":"Môi trường nhân giống","created_at":"2019-11-02 17:41:13","updated_at":"2019-11-02 17:41:13"},
+{"id":"3","name":"Giữ giống","created_at":"2019-11-02 17:41:13","updated_at":"2019-11-02 17:41:13"},
+{"id":"4","name":"Đặc tính probiotic","created_at":"2019-11-02 17:41:14","updated_at":"2019-11-02 17:41:14"},
+{"id":"5","name":"Đặc tính sinh hoá","created_at":"2019-11-02 17:41:14","updated_at":"2019-11-02 17:41:14"},
+{"id":"6","name":"Điều kiện môi trường lên men","created_at":"2019-11-02 17:41:14","updated_at":"2019-11-02 17:41:14"},
+{"id":"7","name":"Ứng dụng trong nuôi trồng thuỷ sản","created_at":"2019-11-02 17:41:14","updated_at":"2019-11-02 17:41:14"}
+]
+}
+]
