@@ -1,0 +1,1 @@
+import{u as t,c as a,a as o,t as s,m as r,o as c}from"./Jb1G6TOb.js";const _={__name:"[id]",setup(n){const e=t().params.id;return(l,i)=>(c(),a("div",null,[o("h1",null,"Product ID: "+s(r(e)),1)]))}};export{_ as default};
