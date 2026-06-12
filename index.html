@@ -1,11 +1,95 @@
-<!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preload" as="fetch" crossorigin="anonymous" href="/_payload.json?e6413c47-f58c-45c5-80f2-62ec26d0e38e">
-<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Jb1G6TOb.js">
-<link rel="modulepreload" as="script" crossorigin href="/_nuxt/DCFVjzM1.js">
-<link rel="prefetch" as="script" crossorigin href="/_nuxt/CXTcTQ_K.js">
-<link rel="prefetch" as="script" crossorigin href="/_nuxt/Dz2Kibmf.js">
-<link rel="prefetch" as="script" crossorigin href="/_nuxt/fz4ySxPd.js">
-<link rel="prefetch" as="script" crossorigin href="/_nuxt/B5gfEXub.js">
-<script type="module" src="/_nuxt/Jb1G6TOb.js" crossorigin></script></head><body><div id="__nuxt"><!--[--> aaa <!--]--></div><div id="teleports"></div><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="true" id="__NUXT_DATA__" data-src="/_payload.json?e6413c47-f58c-45c5-80f2-62ec26d0e38e">[{"state":1,"once":3,"_errors":4,"serverRendered":6,"path":7,"prerenderedAt":8},["Reactive",2],{},["Set"],["ShallowReactive",5],{},true,"/",1726808997439]</script>
-<script>window.__NUXT__={};window.__NUXT__.config={public:{},app:{baseURL:"/",buildId:"e6413c47-f58c-45c5-80f2-62ec26d0e38e",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script></body></html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>食品再配分管理システム | Mottainai</title>
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50:'#f0fdf4', 100:'#dcfce7', 200:'#bbf7d0', 300:'#86efac',
+              400:'#4ade80', 500:'#22c55e', 600:'#16a34a', 700:'#15803d',
+              800:'#166534', 900:'#14532d',
+            },
+          },
+          fontFamily: {
+            sans: ['"Inter"', '"Noto Sans JP"', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- App Styles -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- Sidebar Overlay (mobile) -->
+  <div id="sidebar-overlay" onclick="closeSidebar()"></div>
+
+  <!-- Demo Page Navigator (persistent, outside #app) -->
+  <div id="demo-nav-root"></div>
+  <!-- Demo Nav Overlay -->
+  <div id="demo-nav-overlay" onclick="closeDemoNav()" style="display:none"></div>
+
+  <!-- SPA Mount Point -->
+  <div id="app"></div>
+
+  <!-- ════════════════════════════════════════════════════════
+       CORE — must be loaded in this exact order
+       1. state     → AppState
+       2. i18n      → translations
+       3. mock-data → MockData
+       4. utils     → t, formatDate, escHtml, icon, timeAgo, statusBadge, getFacilityName
+       5. router    → router
+       6. nav-config→ NAV_CONFIG
+       7. app-shell → Toast, getBadgeCount, renderAppShell
+  ════════════════════════════════════════════════════════════ -->
+  <script src="assets/js/core/state.js"></script>
+  <script src="assets/js/core/i18n.js"></script>
+  <script src="assets/js/core/mock-data.js"></script>
+  <script src="assets/js/core/utils.js"></script>
+  <script src="assets/js/core/router.js"></script>
+  <script src="assets/js/core/nav-config.js"></script>
+  <script src="assets/js/core/app-shell.js"></script>
+
+  <!-- ════════════════════════════════════════════════════════
+       PAGES — register routes before handlers.js calls router.init()
+       Add new pages here as they are built.
+  ════════════════════════════════════════════════════════════ -->
+  <script src="assets/js/pages/login.js"></script>
+  <script src="assets/js/pages/dashboard.js"></script>
+  <script src="assets/js/pages/users.js"></script>
+  <script src="assets/js/pages/ingredients.js"></script>
+  <script src="assets/js/pages/facilities.js"></script>
+  <script src="assets/js/pages/bulk-import.js"></script>
+  <script src="assets/js/pages/allocation.js"></script>
+  <script src="assets/js/pages/orders.js"></script>
+  <script src="assets/js/pages/placeholders.js"></script>
+
+  <!-- Demo Navigator — must be after i18n and router are loaded -->
+  <script src="assets/js/core/demo-nav.js"></script>
+
+  <!-- ════════════════════════════════════════════════════════
+       HANDLERS — global event handlers + router.init() boot
+       MUST be last so all pages are registered before boot.
+  ════════════════════════════════════════════════════════════ -->
+  <script src="assets/js/core/handlers.js"></script>
+
+</body>
+</html>
